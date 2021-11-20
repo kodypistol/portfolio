@@ -282,8 +282,9 @@ app.use(function(req, res, next) {
   res.type('txt').send('Not found');
 });
 
+const port = process.env.PORT || 3000;
 
-app.listen(3000, function() {
-  console.log("Server starting. Port 3000.");
+app.listen(port, function() {
+  console.log("Server started successfully.");
 
 });
