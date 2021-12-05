@@ -9,8 +9,8 @@
         $('.preloader').fadeOut('slow');
         RevealLoad();
         startAnim();
-        $('.preloader').removeClass()
-    })
+        $('.preloader').removeClass();
+    });
 
     //--------------------------------------------------
     // Animation Start
@@ -21,41 +21,41 @@
             autoAlpha: 0,
             delay: '.3',
             ease: Power4.easeInOut,
-        })
+        });
         TweenMax.from('.toggle-btn', 1, {
             y: '100',
             delay: '.3',
             autoAlpha: 0,
             ease: Power4.easeInOut,
-        })
+        });
         TweenMax.from('.bg-right', 1, {
             x: 100,
             ease: Power4.easeInOut,
             delay: '.3',
-        })
+        });
         TweenMax.from('.bg-about', 1, {
             x: 100,
             ease: Power4.easeInOut,
             delay: '.3',
-        })
+        });
 
         TweenMax.from('.scr', 1, {
             y: '100',
             ease: Power4.easeInOut,
             autoAlpha: 0,
-        })
+        });
 
         TweenMax.from('.scrolls', 1, {
             y: '100',
             delay: 1,
             ease: Power4.easeInOut,
             autoAlpha: 0,
-        })
+        });
 
 
         TweenMax.to('.menu', 0, {
             autoAlpha: 0,
-        })
+        });
 
 
     }
@@ -92,7 +92,7 @@
             .to(logo, 0, {
                 autoAlpha: 0,
                 delay: '-0.4',
-            })
+            });
 
         loadTL.play();
     }
@@ -114,7 +114,7 @@
             .to(logo, 0, {
                 autoAlpha: 1,
                 delay: '-0.5'
-            })
+            });
 
         loadTL.play();
     }
@@ -122,7 +122,7 @@
     $('.load-spiral').on('click', function (e) {
         e.preventDefault();
         setTimeout(function (url) {
-            window.location = url
+            window.location = url;
         }, 1000, this.href);
         HideLoad();
     });
@@ -142,13 +142,13 @@
                 autoAlpha: 0,
                 y: '100',
 
-            })
+            });
 
             TweenMax.to('.scrolls', .5, {
                 autoAlpha: 0,
                 y: '100',
 
-            })
+            });
 
 
         } else {
@@ -156,13 +156,13 @@
                 autoAlpha: 1,
                 y: '00',
 
-            })
+            });
 
             TweenMax.to('.scrolls', .5, {
                 autoAlpha: 1,
                 y: '0',
 
-            })
+            });
 
         }
     });
@@ -171,13 +171,13 @@
     $('.img-folio').on('mouseenter', function () {
         TweenMax.to(this, 0.4, {
             y: '-30',
-        })
+        });
     });
 
     $('.img-folio').on('mouseleave', function () {
         TweenMax.to(this, 0.4, {
             y: '1',
-        })
+        });
     });
 
 
@@ -353,7 +353,7 @@
                 self.$cursor1.classList.remove('prev');
             });
         }
-    }
+    };
 
     if (!isMobile) {
         cursor.init(); //Init custom cursor
@@ -399,10 +399,10 @@
 
         $('.right-over-next').on("click", function () {
             workSlide.trigger('next.owl.carousel');
-        })
+        });
         $('.right-over-prev').on("click", function () {
             workSlide.trigger('prev.owl.carousel');
-        })
+        });
     }
 
     //--------------------------------------------------
@@ -411,16 +411,16 @@
     var t1 = new TimelineMax({
         paused: true
     });
-    t1.to(".one", 0.8, {
+    t1.to(".one", 1, {
         y: 9,
         autoAlpha: 0,
         ease: Expo.easeInOut
     });
-    t1.to(".two", 0.8, {
+    t1.to(".two", 1, {
         ease: Expo.easeInOut,
         delay: -1
     });
-    t1.to(".tre", 0.8, {
+    t1.to(".tre", 1, {
         y: -9,
         autoAlpha: 0,
         ease: Expo.easeInOut,
@@ -429,21 +429,21 @@
     t1.to(".over-all", 1, {
         autoAlpha: 1,
         ease: Expo.easeOut,
-    })
+    });
     t1.to(".bg-nav", 1, {
         autoAlpha: 1,
         ease: Power4.easeOut,
         delay: -1
-    })
+    });
 
 
     t1.to(".menu", 1, {
         autoAlpha: 1,
         ease: Expo.easeOut,
         delay: -1
-    })
+    });
 
-    t1.staggerFrom(".menu ul li", 3, {
+    t1.staggerFrom(".menu ul li", 1, {
         y: 50,
         opacity: 0,
         ease: Power4.easeInOut,
@@ -454,7 +454,7 @@
 
     $('.toggle-btn').on("click", function () {
         t1.reversed(!t1.reversed()); //toggles the orientation
-    })
+    });
 
 
     //--------------------------------------------------
@@ -506,7 +506,7 @@
 
     mediumZoom(document.querySelectorAll('.cover'), {
         background: '#000',
-    })
+    });
 
     var workSlide = new Swiper('.swiper-container', {
 
@@ -527,11 +527,11 @@
         TweenMax.to('.text-1', 0.3, {
             y: '80',
 
-        })
+        });
         TweenMax.to('.text-2', 0.3, {
             y: '80',
 
-        })
+        });
 
 
 
@@ -541,11 +541,11 @@
         TweenMax.to('.text-1', 0.3, {
             y: '0',
 
-        })
+        });
         TweenMax.to('.text-2', 0.3, {
             y: '0',
 
-        })
+        });
 
     });
 
