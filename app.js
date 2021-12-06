@@ -77,6 +77,10 @@ app.get("/en/bigprojets-web/:projet", function(req, res) {
     res.render("en/bigprojets-culturecampus.ejs");
   }
 
+  if (requestedTitle === "nike-snkrs") {
+    res.locals.title = "Adel SANAA - Nike SNKRS";
+    res.render("en/bigprojets-nikesnkrs.ejs");
+  }
 });
 
   //Big Projets VIDEO
@@ -134,6 +138,11 @@ if (requestedTitle === "l-ecopin") {
 if (requestedTitle === "culture-campus") {
   res.locals.title = "Adel SANAA - Culture Campus";
   res.render("fr/fr-bigprojets-culturecampus.ejs");
+}
+
+if (requestedTitle === "nike-snkrs") {
+  res.locals.title = "Adel SANAA - Nike SNKRS";
+  res.render("fr/fr-bigprojets-nikesnkrs.ejs");
 }
 
 });
