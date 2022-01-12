@@ -291,7 +291,7 @@ app.use(function(req, res, next) {
   res.type('txt').send('Not found');
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 app.listen(port, function() {
   console.log("Server started successfully.");
