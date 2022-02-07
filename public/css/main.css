@@ -1498,6 +1498,19 @@ h1.title {
   background: url("/img/nikesnkrs-work/bgimg-nikesnkrs.png") center no-repeat;
 }
 
+#decouleur {
+  background: url("/img/decouleur-work/bgimg-decouleur.png") center no-repeat;
+}
+
+#covcom {
+  background: url("/img/covcom-work/bgimg-covcom.png") center no-repeat;
+}
+
+#galaxy {
+  background: url("/img/galaxygenerator-work/bgimg-galaxygenerator.png") center no-repeat;
+}
+
+
 #culturecampus {
   background: url("/img/blog/culturecampus.jpg") center no-repeat;
 }

@@ -81,6 +81,21 @@ app.get("/en/bigprojets-web/:projet", function(req, res) {
     res.locals.title = "Adel SANAA - Nike SNKRS";
     res.render("en/bigprojets-nikesnkrs.ejs");
   }
+
+  if (requestedTitle === "covcom") {
+    res.locals.title = "Adel SANAA - Covcom";
+    res.render("en/bigprojets-covcom.ejs");
+  }
+
+  if (requestedTitle === "galaxygenerator") {
+    res.locals.title = "Adel SANAA - Galaxy generator";
+    res.render("en/bigprojets-galaxygenerator.ejs");
+  }
+
+  if (requestedTitle === "musee-decouleur") {
+    res.locals.title = "Adel SANAA - Musée Dé-Couleur";
+    res.render("en/bigprojets-decouleur.ejs");
+  }
 });
 
   //Big Projets VIDEO
@@ -144,6 +159,7 @@ if (requestedTitle === "nike-snkrs") {
   res.locals.title = "Adel SANAA - Nike SNKRS";
   res.render("fr/fr-bigprojets-nikesnkrs.ejs");
 }
+
 
 });
 
